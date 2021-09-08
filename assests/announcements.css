@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body {
+    background: rgb(1,18,194,1);
+    background: linear-gradient(135deg, rgba(1,18,194,1) 0%, rgba(134,18,182) 49%, rgba(1,18,194,1) 100%);
+    background-attachment: fixed;
+}
+.heading{
+    background:#D3D3D3;
+    border: 1px solid #00001a;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+.heading h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(134,18,182);
+    margin: 5px 5px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    padding-top: 7px;
+}
+.fa-sign-out-alt{
+    margin-right: 30px;
+    color: rgba(134,18,182)
+}
+.fa-sign-out-alt:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+    color:rgb(153, 0, 0);
+}
+.fa-home{
+    margin-right: 30px;
+    color: rgba(134,18,182);
+}
+.fa-home:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+    color:#1F9AA2;
+}
+.fa-tachometer-alt{
+    margin-right: 30px;
+    color:rgba(1,18,194,1);
+}
+.fa-tachometer-alt:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+    color:#1E8B42;
+}
+.mainContainer .mainContent{
+    margin-top: 60px;
+    margin-left: 180px;
+    width: 80vw;
+    height: 84vh;
+    justify-content: center;
+    position: fixed;
+    background:#D3D3D3;
+    box-sizing: border-box;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+.mainContent h1{
+    padding-left: 550px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(134,18,182);
+    font-size: xx-large;
+}

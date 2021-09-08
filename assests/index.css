@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+}
+body {
+    background: rgb(1,18,194,1);
+    background: linear-gradient(135deg, rgba(1,18,194,1) 0%, rgba(134,18,182) 49%, rgba(1,18,194,1) 100%);
+    background-attachment: fixed;
+}
+
+.logo img{
+    width: 50%;
+    left: 24%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.loginButton input{
+    position: relative;
+    background-color: black;
+    width: 200px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    padding: 15px;
+    cursor: pointer;
+    border: 0;
+    font-weight: bolder;
+    color: white;
+    border-radius: 30px;
+    margin-top: -2%;
+    float: right;
+    margin-right: 40px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+} 
+.dashboardButton input{
+    position: absolute;
+    display:block;
+    width: 200px;
+    background-color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    padding: 15px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+    border-radius: 30px;
+    margin-top: -2%;
+    float: left;
+    margin-left: 40px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dashboardButton input:hover, .loginButton input:hover{
+    transform: translate(-12px, -12px);
+    background-color: rgba(178,0,251,1);
+    transition: background-color 0.3s box-shadow 0.3s ease;
+}
+.dashboardButton input::after, .loginButton input::after{
+    transform: translate(6px, 6px);
+}
+.dashboardButton input::before, .loginButton input::before{
+    transform: translate(12px, 12px);
+}
+.trademark b{
+    position: absolute;
+    margin-top: 640px;
+    left: 45%;
+    font-size: x-large;
+    color: #D3D3D3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.trademark a{
+    font-size: large;
+    position: relative;
+    top: 675px;
+    left: 36%;
+    color: #D3D3D3;
+    font-family: 'Roboto', sans-serif;
+}
+.trademark p{
+    font-size: large;
+    position: relative;
+    top: 680px;
+    left: 45%;
+    color: #D3D3D3;
+    font-family: 'Roboto', sans-serif;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #D3D3D3;
+}
+.managing h1{
+    font-size: 90px;
+    line-height: 62px;
+    font-weight: bolder;
+    top: 39%;
+    left: 21%;
+    height: 100px;
+    text-align: left;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #6dd5ed 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #6dd5ed 100% );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    100%{ background-position: 400%;}
+}
+
+.slider{
+    color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    padding: 0 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.line{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 70px;
+    line-height: 62px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6dd5ed 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #6dd5ed 100% );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+}
+
+.line:first-child{
+    animation: slider 10s infinite;
+
+}
+@keyframes slider{
+    0%{ margin-top: 0;}
+    16%{ margin-top: -65px; }
+    33%{ margin-top: -120px; }
+    50%{ margin-top: -185px; }
+    66%{ margin-top: -120px; }
+    82%{ margin-top: -65px; }
+    100%{ margin-top: 0; }
+}
